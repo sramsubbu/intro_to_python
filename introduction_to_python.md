@@ -629,13 +629,14 @@ b = list(filter(even,a)) #b = [2,4]
 
 * Reduce takes a function and iterable. the function takes two parameters and returns a single. The reduce function applies the function for the first two, then the result with the next item and its result with the next item until it reduces the iterable to a single value.
 ex:
+```
 from functools import reduce
 def add(a,b):
 	return a+b
 	
-
 a = [1,2,3,4]
 b = reduce(add,a) #b = 10
+```
 
 #### lambdas 
 * Lambdas are anonymous functions that are meant to be used within the context of the place where it is defined.
